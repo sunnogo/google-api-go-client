@@ -13,7 +13,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/net/context"
+	"github.com/sunnogo/net/context"
 )
 
 type unexpectedReader struct{}

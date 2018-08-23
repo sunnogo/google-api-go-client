@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"golang.org/x/net/context"
-	"golang.org/x/oauth2/google"
+	"github.com/sunnogo/net/context"
+	"github.com/sunnogo/oauth2/google"
 )
 
 // Creds returns credential information obtained from DialSettings, or if none, then

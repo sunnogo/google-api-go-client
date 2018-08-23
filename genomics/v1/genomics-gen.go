@@ -4,20 +4,20 @@
 //
 // Usage example:
 //
-//   import "google.golang.org/api/genomics/v1"
+//   import "github.com/sunnogo/google-api-go-client/genomics/v1"
 //   ...
 //   genomicsService, err := genomics.New(oauthHttpClient)
-package genomics // import "google.golang.org/api/genomics/v1"
+package genomics // import "github.com/sunnogo/google-api-go-client/genomics/v1"
 
 import (
 	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
-	context "golang.org/x/net/context"
-	ctxhttp "golang.org/x/net/context/ctxhttp"
-	gensupport "google.golang.org/api/gensupport"
-	googleapi "google.golang.org/api/googleapi"
+	context "github.com/sunnogo/net/context"
+	ctxhttp "github.com/sunnogo/net/context/ctxhttp"
+	gensupport "github.com/sunnogo/google-api-go-client/gensupport"
+	googleapi "github.com/sunnogo/google-api-go-client/googleapi"
 	"io"
 	"net/http"
 	"net/url"

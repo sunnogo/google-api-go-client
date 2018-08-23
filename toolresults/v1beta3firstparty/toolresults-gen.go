@@ -4,20 +4,20 @@
 //
 // Usage example:
 //
-//   import "google.golang.org/api/toolresults/v1beta3firstparty"
+//   import "github.com/sunnogo/google-api-go-client/toolresults/v1beta3firstparty"
 //   ...
 //   toolresultsService, err := toolresults.New(oauthHttpClient)
-package toolresults // import "google.golang.org/api/toolresults/v1beta3firstparty"
+package toolresults // import "github.com/sunnogo/google-api-go-client/toolresults/v1beta3firstparty"
 
 import (
 	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
-	context "golang.org/x/net/context"
-	ctxhttp "golang.org/x/net/context/ctxhttp"
-	gensupport "google.golang.org/api/gensupport"
-	googleapi "google.golang.org/api/googleapi"
+	context "github.com/sunnogo/net/context"
+	ctxhttp "github.com/sunnogo/net/context/ctxhttp"
+	gensupport "github.com/sunnogo/google-api-go-client/gensupport"
+	googleapi "github.com/sunnogo/google-api-go-client/googleapi"
 	"io"
 	"net/http"
 	"net/url"

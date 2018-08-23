@@ -18,9 +18,9 @@ package option
 import (
 	"net/http"
 
-	"golang.org/x/oauth2"
-	"google.golang.org/api/internal"
-	"google.golang.org/grpc"
+	"github.com/sunnogo/oauth2"
+	"github.com/sunnogo/google-api-go-client/internal"
+	"github.com/sunnogo/grpc-go"
 )
 
 // A ClientOption is an option for a Google API client.
@@ -155,7 +155,7 @@ func (w withGRPCConnectionPool) Apply(o *internal.DialSettings) {
 // as the basis for authentication.
 //
 // API Keys can only be used for JSON-over-HTTP APIs, including those under
-// the import path google.golang.org/api/....
+// the import path github.com/sunnogo/google-api-go-client/....
 func WithAPIKey(apiKey string) ClientOption {
 	return withAPIKey(apiKey)
 }

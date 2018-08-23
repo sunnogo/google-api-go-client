@@ -16,7 +16,7 @@ package internal
 
 import (
 	"errors"
-	"google.golang.org/grpc/naming"
+	"github.com/sunnogo/grpc-go/naming"
 )
 
 // PoolResolver provides a fixed list of addresses to load balance between

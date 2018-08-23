@@ -4,20 +4,20 @@
 //
 // Usage example:
 //
-//   import "google.golang.org/api/androidpublisher/v3"
+//   import "github.com/sunnogo/google-api-go-client/androidpublisher/v3"
 //   ...
 //   androidpublisherService, err := androidpublisher.New(oauthHttpClient)
-package androidpublisher // import "google.golang.org/api/androidpublisher/v3"
+package androidpublisher // import "github.com/sunnogo/google-api-go-client/androidpublisher/v3"
 
 import (
 	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
-	context "golang.org/x/net/context"
-	ctxhttp "golang.org/x/net/context/ctxhttp"
-	gensupport "google.golang.org/api/gensupport"
-	googleapi "google.golang.org/api/googleapi"
+	context "github.com/sunnogo/net/context"
+	ctxhttp "github.com/sunnogo/net/context/ctxhttp"
+	gensupport "github.com/sunnogo/google-api-go-client/gensupport"
+	googleapi "github.com/sunnogo/google-api-go-client/googleapi"
 	"io"
 	"net/http"
 	"net/url"

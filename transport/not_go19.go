@@ -17,10 +17,10 @@
 package transport
 
 import (
-	"golang.org/x/net/context"
-	"golang.org/x/oauth2/google"
-	"google.golang.org/api/internal"
-	"google.golang.org/api/option"
+	"github.com/sunnogo/net/context"
+	"github.com/sunnogo/oauth2/google"
+	"github.com/sunnogo/google-api-go-client/internal"
+	"github.com/sunnogo/google-api-go-client/option"
 )
 
 // Creds constructs a google.DefaultCredentials from the information in the options,

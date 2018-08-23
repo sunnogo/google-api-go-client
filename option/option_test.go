@@ -19,9 +19,9 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"golang.org/x/oauth2/google"
-	"google.golang.org/api/internal"
-	"google.golang.org/grpc"
+	"github.com/sunnogo/oauth2/google"
+	"github.com/sunnogo/google-api-go-client/internal"
+	"github.com/sunnogo/grpc-go"
 )
 
 // Check that the slice passed into WithScopes is copied.

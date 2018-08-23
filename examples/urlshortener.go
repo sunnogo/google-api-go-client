@@ -21,7 +21,7 @@ import (
 	"os"
 	"strings"
 
-	urlshortener "google.golang.org/api/urlshortener/v1"
+	urlshortener "github.com/sunnogo/google-api-go-client/urlshortener/v1"
 )
 
 func init() {

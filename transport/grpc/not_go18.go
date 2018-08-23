@@ -16,6 +16,6 @@
 
 package grpc
 
-import "google.golang.org/grpc"
+import "github.com/sunnogo/grpc-go"
 
 func addOCStatsHandler(opts []grpc.DialOption) []grpc.DialOption { return opts }

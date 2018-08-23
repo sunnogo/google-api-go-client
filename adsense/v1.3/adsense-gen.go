@@ -4,20 +4,20 @@
 //
 // Usage example:
 //
-//   import "google.golang.org/api/adsense/v1.3"
+//   import "github.com/sunnogo/google-api-go-client/adsense/v1.3"
 //   ...
 //   adsenseService, err := adsense.New(oauthHttpClient)
-package adsense // import "google.golang.org/api/adsense/v1.3"
+package adsense // import "github.com/sunnogo/google-api-go-client/adsense/v1.3"
 
 import (
 	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
-	context "golang.org/x/net/context"
-	ctxhttp "golang.org/x/net/context/ctxhttp"
-	gensupport "google.golang.org/api/gensupport"
-	googleapi "google.golang.org/api/googleapi"
+	context "github.com/sunnogo/net/context"
+	ctxhttp "github.com/sunnogo/net/context/ctxhttp"
+	gensupport "github.com/sunnogo/google-api-go-client/gensupport"
+	googleapi "github.com/sunnogo/google-api-go-client/googleapi"
 	"io"
 	"net/http"
 	"net/url"

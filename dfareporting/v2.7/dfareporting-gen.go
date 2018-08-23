@@ -4,20 +4,20 @@
 //
 // Usage example:
 //
-//   import "google.golang.org/api/dfareporting/v2.7"
+//   import "github.com/sunnogo/google-api-go-client/dfareporting/v2.7"
 //   ...
 //   dfareportingService, err := dfareporting.New(oauthHttpClient)
-package dfareporting // import "google.golang.org/api/dfareporting/v2.7"
+package dfareporting // import "github.com/sunnogo/google-api-go-client/dfareporting/v2.7"
 
 import (
 	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
-	context "golang.org/x/net/context"
-	ctxhttp "golang.org/x/net/context/ctxhttp"
-	gensupport "google.golang.org/api/gensupport"
-	googleapi "google.golang.org/api/googleapi"
+	context "github.com/sunnogo/net/context"
+	ctxhttp "github.com/sunnogo/net/context/ctxhttp"
+	gensupport "github.com/sunnogo/google-api-go-client/gensupport"
+	googleapi "github.com/sunnogo/google-api-go-client/googleapi"
 	"io"
 	"net/http"
 	"net/url"

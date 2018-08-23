@@ -4,20 +4,20 @@
 //
 // Usage example:
 //
-//   import "google.golang.org/api/deploymentmanager/v0.alpha"
+//   import "github.com/sunnogo/google-api-go-client/deploymentmanager/v0.alpha"
 //   ...
 //   deploymentmanagerService, err := deploymentmanager.New(oauthHttpClient)
-package deploymentmanager // import "google.golang.org/api/deploymentmanager/v0.alpha"
+package deploymentmanager // import "github.com/sunnogo/google-api-go-client/deploymentmanager/v0.alpha"
 
 import (
 	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
-	context "golang.org/x/net/context"
-	ctxhttp "golang.org/x/net/context/ctxhttp"
-	gensupport "google.golang.org/api/gensupport"
-	googleapi "google.golang.org/api/googleapi"
+	context "github.com/sunnogo/net/context"
+	ctxhttp "github.com/sunnogo/net/context/ctxhttp"
+	gensupport "github.com/sunnogo/google-api-go-client/gensupport"
+	googleapi "github.com/sunnogo/google-api-go-client/googleapi"
 	"io"
 	"net/http"
 	"net/url"

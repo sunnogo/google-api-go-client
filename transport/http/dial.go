@@ -14,18 +14,18 @@
 
 // Package transport/http supports network connections to HTTP servers.
 // This package is not intended for use by end developers. Use the
-// google.golang.org/api/option package to configure API clients.
+// github.com/sunnogo/google-api-go-client/option package to configure API clients.
 package http
 
 import (
 	"errors"
 	"net/http"
 
-	"golang.org/x/net/context"
-	"golang.org/x/oauth2"
-	"google.golang.org/api/googleapi/transport"
-	"google.golang.org/api/internal"
-	"google.golang.org/api/option"
+	"github.com/sunnogo/net/context"
+	"github.com/sunnogo/oauth2"
+	"github.com/sunnogo/google-api-go-client/googleapi/transport"
+	"github.com/sunnogo/google-api-go-client/internal"
+	"github.com/sunnogo/google-api-go-client/option"
 )
 
 // NewClient returns an HTTP client for use communicating with a Google cloud

@@ -18,7 +18,7 @@ package grpc
 
 import (
 	"go.opencensus.io/plugin/ocgrpc"
-	"google.golang.org/grpc"
+	"github.com/sunnogo/grpc-go"
 )
 
 func addOCStatsHandler(opts []grpc.DialOption) []grpc.DialOption {

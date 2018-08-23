@@ -20,7 +20,7 @@ import (
 	"net/http"
 	"time"
 
-	"golang.org/x/net/context"
+	"github.com/sunnogo/net/context"
 )
 
 // Retry invokes the given function, retrying it multiple times if the connection failed or

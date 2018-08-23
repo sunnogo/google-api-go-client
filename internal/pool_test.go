@@ -17,7 +17,7 @@ limitations under the License.
 package internal
 
 import (
-	"google.golang.org/grpc/naming"
+	"github.com/sunnogo/grpc-go/naming"
 	"testing"
 	"time"
 )

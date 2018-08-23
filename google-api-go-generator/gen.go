@@ -25,7 +25,7 @@ import (
 	"strings"
 	"unicode"
 
-	"google.golang.org/api/google-api-go-generator/internal/disco"
+	"github.com/sunnogo/google-api-go-client/google-api-go-generator/internal/disco"
 )
 
 const (
@@ -45,14 +45,14 @@ var (
 
 	jsonFile       = flag.String("api_json_file", "", "If non-empty, the path to a local file on disk containing the API to generate. Exclusive with setting --api.")
 	output         = flag.String("output", "", "(optional) Path to source output file. If not specified, the API name and version are used to construct an output path (e.g. tasks/v1).")
-	apiPackageBase = flag.String("api_pkg_base", "google.golang.org/api", "Go package prefix to use for all generated APIs.")
+	apiPackageBase = flag.String("api_pkg_base", "github.com/sunnogo/google-api-go-client", "Go package prefix to use for all generated APIs.")
 	baseURL        = flag.String("base_url", "", "(optional) Override the default service API URL. If empty, the service's root URL will be used.")
 	headerPath     = flag.String("header_path", "", "If non-empty, prepend the contents of this file to generated services.")
 
-	contextHTTPPkg = flag.String("ctxhttp_pkg", "golang.org/x/net/context/ctxhttp", "Go package path of the 'ctxhttp' package.")
-	contextPkg     = flag.String("context_pkg", "golang.org/x/net/context", "Go package path of the 'context' package.")
-	gensupportPkg  = flag.String("gensupport_pkg", "google.golang.org/api/gensupport", "Go package path of the 'api/gensupport' support package.")
-	googleapiPkg   = flag.String("googleapi_pkg", "google.golang.org/api/googleapi", "Go package path of the 'api/googleapi' support package.")
+	contextHTTPPkg = flag.String("ctxhttp_pkg", "github.com/sunnogo/net/context/ctxhttp", "Go package path of the 'ctxhttp' package.")
+	contextPkg     = flag.String("context_pkg", "github.com/sunnogo/net/context", "Go package path of the 'context' package.")
+	gensupportPkg  = flag.String("gensupport_pkg", "github.com/sunnogo/google-api-go-client/gensupport", "Go package path of the 'api/gensupport' support package.")
+	googleapiPkg   = flag.String("googleapi_pkg", "github.com/sunnogo/google-api-go-client/googleapi", "Go package path of the 'api/googleapi' support package.")
 
 	serviceTypes = []string{"Service", "APIService"}
 )
@@ -338,7 +338,7 @@ var oddVersionRE = regexp.MustCompile(`^(.+)_(v[\d\.]+)$`)
 // that the final path component of the import path doesn't look
 // like a Go identifier. This keeps the consistency that import paths
 // for the generated Go packages look like:
-//     google.golang.org/api/NAME/v<version>
+//     github.com/sunnogo/google-api-go-client/NAME/v<version>
 // and have package NAME.
 // See https://github.com/google/google-api-go-client/issues/78
 func renameVersion(version string) string {

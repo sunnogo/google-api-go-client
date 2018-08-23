@@ -19,9 +19,9 @@ import (
 	"io"
 	"log"
 
-	"golang.org/x/net/context"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
+	"github.com/sunnogo/net/context"
+	"github.com/sunnogo/grpc-go"
+	"github.com/sunnogo/grpc-go/codes"
 )
 
 type ExampleReadHandler struct {
@@ -80,6 +80,6 @@ func ExampleNewServer() {
 	}
 
 	// Start accepting incoming connections.
-	// See gRPC docs and newGRPCServer in google.golang.org/api/transport/bytestream/client_test.go.
+	// See gRPC docs and newGRPCServer in github.com/sunnogo/google-api-go-client/transport/bytestream/client_test.go.
 	_ = bytestreamServer
 }

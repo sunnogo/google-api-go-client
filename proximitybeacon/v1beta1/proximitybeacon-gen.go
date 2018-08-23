@@ -4,20 +4,20 @@
 //
 // Usage example:
 //
-//   import "google.golang.org/api/proximitybeacon/v1beta1"
+//   import "github.com/sunnogo/google-api-go-client/proximitybeacon/v1beta1"
 //   ...
 //   proximitybeaconService, err := proximitybeacon.New(oauthHttpClient)
-package proximitybeacon // import "google.golang.org/api/proximitybeacon/v1beta1"
+package proximitybeacon // import "github.com/sunnogo/google-api-go-client/proximitybeacon/v1beta1"
 
 import (
 	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
-	context "golang.org/x/net/context"
-	ctxhttp "golang.org/x/net/context/ctxhttp"
-	gensupport "google.golang.org/api/gensupport"
-	googleapi "google.golang.org/api/googleapi"
+	context "github.com/sunnogo/net/context"
+	ctxhttp "github.com/sunnogo/net/context/ctxhttp"
+	gensupport "github.com/sunnogo/google-api-go-client/gensupport"
+	googleapi "github.com/sunnogo/google-api-go-client/googleapi"
 	"io"
 	"net/http"
 	"net/url"

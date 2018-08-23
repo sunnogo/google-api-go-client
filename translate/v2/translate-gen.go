@@ -6,20 +6,20 @@
 //
 // Usage example:
 //
-//   import "google.golang.org/api/translate/v2"
+//   import "github.com/sunnogo/google-api-go-client/translate/v2"
 //   ...
 //   translateService, err := translate.New(oauthHttpClient)
-package translate // import "google.golang.org/api/translate/v2"
+package translate // import "github.com/sunnogo/google-api-go-client/translate/v2"
 
 import (
 	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
-	context "golang.org/x/net/context"
-	ctxhttp "golang.org/x/net/context/ctxhttp"
-	gensupport "google.golang.org/api/gensupport"
-	googleapi "google.golang.org/api/googleapi"
+	context "github.com/sunnogo/net/context"
+	ctxhttp "github.com/sunnogo/net/context/ctxhttp"
+	gensupport "github.com/sunnogo/google-api-go-client/gensupport"
+	googleapi "github.com/sunnogo/google-api-go-client/googleapi"
 	"io"
 	"net/http"
 	"net/url"

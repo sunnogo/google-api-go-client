@@ -23,10 +23,10 @@ import (
 	"sync"
 	"testing"
 
-	"golang.org/x/net/context"
-	"google.golang.org/grpc"
+	"github.com/sunnogo/net/context"
+	"github.com/sunnogo/grpc-go"
 
-	pb "google.golang.org/genproto/googleapis/bytestream"
+	pb "github.com/sunnogo/go-genproto/googleapis/bytestream"
 )
 
 const (

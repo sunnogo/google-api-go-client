@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	mirror "google.golang.org/api/mirror/v1"
+	mirror "github.com/sunnogo/google-api-go-client/mirror/v1"
 )
 
 const mirrorLayout = "Jan 2, 2006 at 3:04pm"

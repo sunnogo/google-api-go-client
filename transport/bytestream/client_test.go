@@ -23,12 +23,12 @@ import (
 	"net"
 	"testing"
 
-	"golang.org/x/net/context"
-	"google.golang.org/api/transport/bytestream/internal"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/metadata"
+	"github.com/sunnogo/net/context"
+	"github.com/sunnogo/google-api-go-client/transport/bytestream/internal"
+	"github.com/sunnogo/grpc-go"
+	"github.com/sunnogo/grpc-go/metadata"
 
-	pb "google.golang.org/genproto/googleapis/bytestream"
+	pb "github.com/sunnogo/go-genproto/googleapis/bytestream"
 )
 
 const testData = "0123456789"

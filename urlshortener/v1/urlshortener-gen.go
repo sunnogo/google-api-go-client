@@ -4,20 +4,20 @@
 //
 // Usage example:
 //
-//   import "google.golang.org/api/urlshortener/v1"
+//   import "github.com/sunnogo/google-api-go-client/urlshortener/v1"
 //   ...
 //   urlshortenerService, err := urlshortener.New(oauthHttpClient)
-package urlshortener // import "google.golang.org/api/urlshortener/v1"
+package urlshortener // import "github.com/sunnogo/google-api-go-client/urlshortener/v1"
 
 import (
 	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
-	context "golang.org/x/net/context"
-	ctxhttp "golang.org/x/net/context/ctxhttp"
-	gensupport "google.golang.org/api/gensupport"
-	googleapi "google.golang.org/api/googleapi"
+	context "github.com/sunnogo/net/context"
+	ctxhttp "github.com/sunnogo/net/context/ctxhttp"
+	gensupport "github.com/sunnogo/google-api-go-client/gensupport"
+	googleapi "github.com/sunnogo/google-api-go-client/googleapi"
 	"io"
 	"net/http"
 	"net/url"

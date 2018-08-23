@@ -20,8 +20,8 @@ import (
 	"io"
 	"log"
 
-	"golang.org/x/net/context"
-	"google.golang.org/grpc"
+	"github.com/sunnogo/net/context"
+	"github.com/sunnogo/grpc-go"
 )
 
 func ExampleNewClient(serverPort int, resourceName string) {

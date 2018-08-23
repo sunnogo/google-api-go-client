@@ -20,10 +20,10 @@ import (
 	"net"
 	"time"
 
-	"golang.org/x/net/context"
-	"google.golang.org/appengine"
-	"google.golang.org/appengine/socket"
-	"google.golang.org/grpc"
+	"github.com/sunnogo/net/context"
+	"github.com/sunnogo/appengine"
+	"github.com/sunnogo/appengine/socket"
+	"github.com/sunnogo/grpc-go"
 )
 
 func init() {

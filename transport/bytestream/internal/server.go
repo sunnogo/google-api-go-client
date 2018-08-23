@@ -23,16 +23,16 @@ import (
 	"fmt"
 	"io"
 
-	"golang.org/x/net/context"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
+	"github.com/sunnogo/net/context"
+	"github.com/sunnogo/grpc-go"
+	"github.com/sunnogo/grpc-go/codes"
 
-	pb "google.golang.org/genproto/googleapis/bytestream"
+	pb "github.com/sunnogo/go-genproto/googleapis/bytestream"
 )
 
 // ReadHandler reads from the Bytestream.
 // Note: error returns must return an instance of grpc.rpcError unless otherwise handled in grpc-go/rpc_util.go.
-// http://google.golang.org/grpc provides Errorf(code, fmt, ...) to create instances of grpc.rpcError.
+// http://github.com/sunnogo/grpc-go provides Errorf(code, fmt, ...) to create instances of grpc.rpcError.
 // Note: Cancelling the context will abort the stream ("drop the connection"). Consider returning a non-nil error instead.
 type ReadHandler interface {
 	// GetReader provides an io.ReaderAt, which will not be retained by the Server after the pb.ReadRequest.

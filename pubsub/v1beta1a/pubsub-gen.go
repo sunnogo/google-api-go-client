@@ -6,20 +6,20 @@
 //
 // Usage example:
 //
-//   import "google.golang.org/api/pubsub/v1beta1a"
+//   import "github.com/sunnogo/google-api-go-client/pubsub/v1beta1a"
 //   ...
 //   pubsubService, err := pubsub.New(oauthHttpClient)
-package pubsub // import "google.golang.org/api/pubsub/v1beta1a"
+package pubsub // import "github.com/sunnogo/google-api-go-client/pubsub/v1beta1a"
 
 import (
 	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
-	context "golang.org/x/net/context"
-	ctxhttp "golang.org/x/net/context/ctxhttp"
-	gensupport "google.golang.org/api/gensupport"
-	googleapi "google.golang.org/api/googleapi"
+	context "github.com/sunnogo/net/context"
+	ctxhttp "github.com/sunnogo/net/context/ctxhttp"
+	gensupport "github.com/sunnogo/google-api-go-client/gensupport"
+	googleapi "github.com/sunnogo/google-api-go-client/googleapi"
 	"io"
 	"net/http"
 	"net/url"

@@ -14,19 +14,19 @@
 
 // Package transport/grpc supports network connections to GRPC servers.
 // This package is not intended for use by end developers. Use the
-// google.golang.org/api/option package to configure API clients.
+// github.com/sunnogo/google-api-go-client/option package to configure API clients.
 package grpc
 
 import (
 	"errors"
 	"log"
 
-	"golang.org/x/net/context"
-	"google.golang.org/api/internal"
-	"google.golang.org/api/option"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/oauth"
+	"github.com/sunnogo/net/context"
+	"github.com/sunnogo/google-api-go-client/internal"
+	"github.com/sunnogo/google-api-go-client/option"
+	"github.com/sunnogo/grpc-go"
+	"github.com/sunnogo/grpc-go/credentials"
+	"github.com/sunnogo/grpc-go/credentials/oauth"
 )
 
 // Set at init time by dial_appengine.go. If nil, we're not on App Engine.

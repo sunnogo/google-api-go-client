@@ -24,8 +24,8 @@ import (
 	"sort"
 	"strconv"
 
-	"golang.org/x/net/context"
-	"google.golang.org/api/iterator"
+	"github.com/sunnogo/net/context"
+	"github.com/sunnogo/google-api-go-client/iterator"
 )
 
 var (

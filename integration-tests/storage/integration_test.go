@@ -28,11 +28,11 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/net/context"
-	"golang.org/x/oauth2"
-	"golang.org/x/oauth2/google"
-	"google.golang.org/api/googleapi"
-	storage "google.golang.org/api/storage/v1"
+	"github.com/sunnogo/net/context"
+	"github.com/sunnogo/oauth2"
+	"github.com/sunnogo/oauth2/google"
+	"github.com/sunnogo/google-api-go-client/googleapi"
+	storage "github.com/sunnogo/google-api-go-client/storage/v1"
 )
 
 type object struct {

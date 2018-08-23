@@ -19,9 +19,9 @@ import (
 	"errors"
 	"net/http"
 
-	"golang.org/x/oauth2"
-	"golang.org/x/oauth2/google"
-	"google.golang.org/grpc"
+	"github.com/sunnogo/oauth2"
+	"github.com/sunnogo/oauth2/google"
+	"github.com/sunnogo/grpc-go"
 )
 
 // DialSettings holds information needed to establish a connection with a

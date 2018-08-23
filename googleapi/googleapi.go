@@ -4,7 +4,7 @@
 
 // Package googleapi contains the common code shared by all Google API
 // libraries.
-package googleapi // import "google.golang.org/api/googleapi"
+package googleapi // import "github.com/sunnogo/google-api-go-client/googleapi"
 
 import (
 	"bytes"
@@ -16,7 +16,7 @@ import (
 	"net/url"
 	"strings"
 
-	"google.golang.org/api/googleapi/internal/uritemplates"
+	"github.com/sunnogo/google-api-go-client/googleapi/internal/uritemplates"
 )
 
 // ContentTyper is an interface for Readers which know (or would like

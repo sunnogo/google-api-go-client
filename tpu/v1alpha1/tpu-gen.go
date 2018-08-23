@@ -4,20 +4,20 @@
 //
 // Usage example:
 //
-//   import "google.golang.org/api/tpu/v1alpha1"
+//   import "github.com/sunnogo/google-api-go-client/tpu/v1alpha1"
 //   ...
 //   tpuService, err := tpu.New(oauthHttpClient)
-package tpu // import "google.golang.org/api/tpu/v1alpha1"
+package tpu // import "github.com/sunnogo/google-api-go-client/tpu/v1alpha1"
 
 import (
 	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
-	context "golang.org/x/net/context"
-	ctxhttp "golang.org/x/net/context/ctxhttp"
-	gensupport "google.golang.org/api/gensupport"
-	googleapi "google.golang.org/api/googleapi"
+	context "github.com/sunnogo/net/context"
+	ctxhttp "github.com/sunnogo/net/context/ctxhttp"
+	gensupport "github.com/sunnogo/google-api-go-client/gensupport"
+	googleapi "github.com/sunnogo/google-api-go-client/googleapi"
 	"io"
 	"net/http"
 	"net/url"

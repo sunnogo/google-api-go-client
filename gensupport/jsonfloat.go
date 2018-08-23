@@ -27,7 +27,7 @@ import (
 // that is a proto-to-JSON spec, it applies to all Google APIs.
 //
 // The jsonpb package
-// (https://github.com/golang/protobuf/blob/master/jsonpb/jsonpb.go) has
+// (https://github.com/sunnogo/protobuf/blob/master/jsonpb/jsonpb.go) has
 // similar functionality, but only for direct translation from proto messages
 // to JSON.
 type JSONFloat64 float64
@@ -48,10 +48,10 @@ func (f *JSONFloat64) UnmarshalJSON(data []byte) error {
 		case "-Infinity":
 			ff = math.Inf(-1)
 		default:
-			return fmt.Errorf("google.golang.org/api/internal: bad float string %q", s)
+			return fmt.Errorf("github.com/sunnogo/google-api-go-client/internal: bad float string %q", s)
 		}
 		*f = JSONFloat64(ff)
 		return nil
 	}
-	return errors.New("google.golang.org/api/internal: data not float or string")
+	return errors.New("github.com/sunnogo/google-api-go-client/internal: data not float or string")
 }

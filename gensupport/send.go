@@ -9,8 +9,8 @@ import (
 	"errors"
 	"net/http"
 
-	"golang.org/x/net/context"
-	"golang.org/x/net/context/ctxhttp"
+	"github.com/sunnogo/net/context"
+	"github.com/sunnogo/net/context/ctxhttp"
 )
 
 // Hook is the type of a function that is called once before each HTTP request

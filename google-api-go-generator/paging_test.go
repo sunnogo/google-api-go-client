@@ -23,9 +23,9 @@ import (
 	"strconv"
 	"testing"
 
-	"golang.org/x/net/context"
+	"github.com/sunnogo/net/context"
 
-	crm "google.golang.org/api/cloudresourcemanager/v1"
+	crm "github.com/sunnogo/google-api-go-client/cloudresourcemanager/v1"
 )
 
 //go:generate -command api go run gen.go docurls.go replacements.go -install -api

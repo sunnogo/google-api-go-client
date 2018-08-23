@@ -19,10 +19,10 @@ import (
 	"net/http"
 	"testing"
 
-	"google.golang.org/grpc"
+	"github.com/sunnogo/grpc-go"
 
-	"golang.org/x/oauth2"
-	"golang.org/x/oauth2/google"
+	"github.com/sunnogo/oauth2"
+	"github.com/sunnogo/oauth2/google"
 )
 
 func TestSettingsValidate(t *testing.T) {

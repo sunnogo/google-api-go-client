@@ -21,8 +21,8 @@ import (
 	"os"
 	"strings"
 
-	compute "google.golang.org/api/compute/v1"
-	"google.golang.org/api/googleapi"
+	compute "github.com/sunnogo/google-api-go-client/compute/v1"
+	"github.com/sunnogo/google-api-go-client/googleapi"
 )
 
 func init() {

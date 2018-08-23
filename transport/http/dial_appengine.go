@@ -19,8 +19,8 @@ package http
 import (
 	"net/http"
 
-	"golang.org/x/net/context"
-	"google.golang.org/appengine/urlfetch"
+	"github.com/sunnogo/net/context"
+	"github.com/sunnogo/appengine/urlfetch"
 )
 
 func init() {

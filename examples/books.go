@@ -12,8 +12,8 @@ import (
 	"strconv"
 	"strings"
 
-	books "google.golang.org/api/books/v1"
-	"google.golang.org/api/googleapi"
+	books "github.com/sunnogo/google-api-go-client/books/v1"
+	"github.com/sunnogo/google-api-go-client/googleapi"
 )
 
 func init() {

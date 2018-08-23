@@ -20,10 +20,10 @@ import (
 	"testing"
 	"time"
 
-	"golang.org/x/net/context"
-	"golang.org/x/oauth2"
-	"google.golang.org/api/option"
-	"google.golang.org/grpc"
+	"github.com/sunnogo/net/context"
+	"github.com/sunnogo/oauth2"
+	"github.com/sunnogo/google-api-go-client/option"
+	"github.com/sunnogo/grpc-go"
 )
 
 // Check that user optioned grpc.WithDialer option overrides the App Engine hook.

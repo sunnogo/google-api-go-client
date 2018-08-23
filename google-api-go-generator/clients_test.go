@@ -27,12 +27,12 @@ import (
 	"testing"
 	"testing/iotest"
 
-	"golang.org/x/net/context"
+	"github.com/sunnogo/net/context"
 
 	// If you add a client, add a matching go:generate line below.
-	dfa "google.golang.org/api/dfareporting/v2.8"
-	mon "google.golang.org/api/monitoring/v3"
-	storage "google.golang.org/api/storage/v1"
+	dfa "github.com/sunnogo/google-api-go-client/dfareporting/v2.8"
+	mon "github.com/sunnogo/google-api-go-client/monitoring/v3"
+	storage "github.com/sunnogo/google-api-go-client/storage/v1"
 )
 
 //go:generate -command api go run gen.go docurls.go replacements.go -install -api

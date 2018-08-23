@@ -14,18 +14,18 @@
 
 // Package transport supports network connections to HTTP and GRPC servers.
 // This package is not intended for use by end developers. Use the
-// google.golang.org/api/option package to configure API clients.
+// github.com/sunnogo/google-api-go-client/option package to configure API clients.
 package transport
 
 import (
 	"net/http"
 
-	"golang.org/x/net/context"
-	"google.golang.org/grpc"
+	"github.com/sunnogo/net/context"
+	"github.com/sunnogo/grpc-go"
 
-	"google.golang.org/api/option"
-	gtransport "google.golang.org/api/transport/grpc"
-	htransport "google.golang.org/api/transport/http"
+	"github.com/sunnogo/google-api-go-client/option"
+	gtransport "github.com/sunnogo/google-api-go-client/transport/grpc"
+	htransport "github.com/sunnogo/google-api-go-client/transport/http"
 )
 
 // NewHTTPClient returns an HTTP client for use communicating with a Google cloud
